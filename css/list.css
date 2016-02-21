@@ -1,0 +1,361 @@
+html {
+    background-color: #bbdefb;
+    font-family: 'Helvetica', sans-serif;
+    font-weight: 200;
+    -ms-text-size-adjust: 100%;    
+    -webkit-text-size-adjust: 100%;
+}
+body {
+    color: #888;
+    margin: 0;
+    width: 100%;
+}
+table {
+    width: 100%;
+}
+a {
+    float: left;
+}
+footer {
+    text-align: center;
+}
+#footerlogo {
+    width: 100px;
+    height: auto;
+}
+td:hover {
+    color: #333;
+    border-color: #888;
+    outline: 0;
+}
+.regularTd {
+    border-radius: 3px;
+    height: 160px;
+    background-color: #fff;
+}
+#emptyList {
+    text-align: center;
+    font-weight: bold;
+    width: 100%;
+    display: table;
+}
+#headerLink {
+    color: #ffffff;
+    text-decoration: none;
+}
+#addNewButton {
+    background: url(../img/add.svg) no-repeat;
+    background-size: 25px 25px;
+    background-position: center;
+    position: fixed;
+    bottom: 25px;
+    right: 90px;
+    background-color: rgba(33, 72, 100, 1.0);
+    width: 60px;
+    height: 60px;
+    padding: 5px;
+    border: 2px solid rgba(85, 85, 85, 0.7);
+    border-radius: 50%;
+    box-shadow: 0 0 3px gray;
+}
+#addNewButton:hover {
+    background-color: rgba(33, 72, 100, 0.7);
+    border: 1px solid rgba(85, 85, 85, 0.7);
+    box-shadow: 0 0 5px gray;
+}
+#addNewButton:active {
+    border: 2px solid gray;
+    background-color: rgba(33, 72, 100);
+    box-shadow: 0 0 10px gray;
+}
+#addNewButton:focus {
+    outline-style: none;
+}
+#addNewHabitContainer {
+    display: none;
+    position: absolute;
+    margin: auto;
+    width: 100%;
+    height: 725px;
+    right: 0px;
+    left: 0px;
+    text-align: center;
+    margin-top: 0px;
+    border-radius: 0px;
+    background-color: #fff;
+    min-width: 300px;
+}
+#submitPopupButton {
+    background-color: #48BA87;
+}
+.habitBox {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    overflow: hidden;
+    padding-top: 15px;
+    width: 95%
+}
+.habitBlock {
+    height: 100%;
+    position: relative;
+    width: 100%;
+}
+.habitText {
+    display: inline;
+    position: absolute;
+    text-decoration: none;
+    color: #888;
+    font-size: 24px;
+    text-align: left;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+.habitIcon {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    bottom: 5px;
+    left: 7px;
+}
+.habitButtons {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
+.iconUpload {
+    height: 100px;
+    width: auto;
+}
+.disabledButton {
+    background: url(../img/done.svg) no-repeat;
+    background-position: center;
+    display: inline-block;
+    height: 50px;
+    width: 60px;
+    text-align: center;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    color: #FFF;
+    background-color: rgba(100, 100, 100, 0.8);
+    border-color: #3FAA96;
+    border-radius: 4px;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    disabled: true;
+}
+.disabledButton {
+    cursor: default;
+}
+.doneButton {
+    background: url(../img/done.svg) no-repeat;
+    background-position: center;
+    display: inline-block;
+    height: 50px;
+    width: 60px;
+    text-align: center;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    color: #FFF;
+    background-color: rgba(0, 177, 106, 0.8);
+    border-color: #3FAA96;
+    border-radius: 4px;
+    border: 2px solid rgba(0, 128, 0, 0.3);
+    cursor: pointer;
+}
+.doneButton:hover {
+    background-color: #00B16A;
+}
+.doneButton:active {
+    background-color: #00B16A;
+    border: 2px solid green;
+}
+.deleteButton {
+    background: url(../img/delete.svg) no-repeat;
+    background-size: 37px 37px;
+    background-position: center;
+    display: inline;
+    height: 50px;
+    width: 60px;
+    text-align: center;
+    font-size: 0px;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    color: #FFF;
+    background-color: rgba(242, 38, 19, 0.7);
+    border-color: #DD574C;
+    border-radius: 4px;
+    border: 2px solid rgba(255, 0, 0, 0.3);
+    cursor: pointer;
+}
+.deleteButton:hover {
+    background-color: #F22613;
+}
+.deleteButton:active {
+    background-color: #F22613;
+    border: 2px solid red;
+}
+.editButton {
+    background: url(../img/edit.svg) no-repeat;
+    background-size: 40px 40px;
+    background-position: center;
+    display: inline;
+    height: 50px;
+    width: 60px;
+    text-align: center;
+    font-size: 0px;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    color: #FFF;
+    background-color: rgba(247, 202, 24, 0.8);
+    border-color: #3FAA96;
+    border-radius: 4px;
+    border: 2px solid rgba(255, 255, 0, 0.3);
+    cursor: pointer;
+}
+.editButton:hover {
+    background-color: #F7CA18;
+}
+.editButton:active {
+    background-color: #F7CA18;
+    border: 2px solid yellow;
+}
+.formButton {
+    -webkit-appearance: none;
+    width: 25%;
+    display: inline-block;
+    margin: 0;
+    padding: 15px;
+    background: none;
+    border: none;
+    color: white;
+    background-color: rgba(242, 38, 19, 0.7);
+    -webkit-border-radius: 5px; /*For Safari, etc. */
+    -moz-border-radius: 5px; /* For Mozilla, etc. */
+    border-radius: 5px; /* CSS3 Feature */
+    opacity: 1.0;
+    font-size: medium;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.ck-button {
+    margin-right: 5px;
+    margin-left: 5px;
+    display: inline-block;
+    width: 4.0em;
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #EFEFEF;
+}
+.ck-button span {
+    text-align: center;
+    padding: 3px 0px;
+    display: block;
+    overflow: auto;
+}
+.ck-button input {
+    position: absolute;
+    display: none;
+}
+.ck-button input:checked + span {
+    background-color: #9c9696;
+    border-radius: 5px;
+    color: #fff;
+}
+.ck-button input:hover + span {
+    cursor: pointer;
+}
+.imageButton {
+    background: none;
+    border: none;
+}
+.progressContainer {
+    float: right;
+    display: inline-block;
+    width: 70%;
+    padding-top: 30px;
+    padding-right: 10px;
+    text-align: right;
+    color: #888;
+    font-size: 16px;
+}
+.progress-total {
+    visibility: visible;
+}
+.progress-today {
+    text-align: left;
+    font-size: 16px;
+    color: #888;
+}
+.progressbar {
+    width: 100%;
+    background-color: rgba(171, 171, 171, 0.6);
+}
+.progressbar > div {
+    background-color: rgba(242, 38, 19, 0.7);
+    width: 0%;
+    height: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    -webkit-transition: width 0.5s ease-out, background-color 1s ease-out;
+    -moz-transition: width 0.5s ease-out, background-color 1s ease-out;
+    transition: width 0.5s ease-out, background-color 1s ease-out;
+}
+@media (max-width: 320px) {
+    header,
+    .regularTd,
+    .habitBox {
+        width: 290px;
+    }
+}
+@media (max-width: 420px) {
+    .habitIcon {
+        width: 50px;
+        height: 50px;
+    }
+}
+@media (max-width: 500px) {
+    .habitText {
+        font-size: 18px;
+    }
+    .doneButton,
+    .editButton,
+    .deleteButton {
+        height: 45px;
+        width: 55px;
+    }
+    .regularTd {
+        height: 160px;
+    }
+    .progressContainer {
+        width: 240px;
+    }
+    .progress-total {
+        font-size: 16px;
+    }
+    .progress-today {
+        font-size: 14px;
+    }
+}
+@media (min-width: 700px) {
+    .habitBox,
+    #addNewHabitContainer {
+        width: 630px;
+        margin-top: 15px;
+        border-radius: 15px;
+    }
+}
+
+#logoutButton{
+    float:right;
+}
+
+
+#welcome {
+    float: right;
+    color: black;
+}
