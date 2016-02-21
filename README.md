@@ -1,5 +1,4 @@
-# CSE 134B HW5 Team Nerdz
-* https://virtuevice.us/
+https://virtue-vice.firebaseapp.com
 
 ## Group Members:
 * Kevin Hsu
@@ -27,24 +26,10 @@ day every time they add a habit.
 the frequency), then it is "greyed out" and the user cannot complete the habit. The user can still edit the habit.
 
 ## Notifications
-* A notification is sent everyday at 9 PM PST to all users reminding them to fill in their habits.  The user must
- subscribe to notifications to receive them.  Users have the option to enable and disable notifications and other settings
- if the paid service of Roost is used, but we are using the free trial.
-* Roost was used to implement the notifications.  On-site notifications are supported on both the desktop and mobile
- versions of Chrome, Firefox, Internet Explorer, Safari (desktop and iOS), and Opera.  Off-site notifications are 
-supported on Chrome (Mac OS X, Windows, Linux and Android) and on Safari (Mac OS X).
-* An additional option that was explored was allowing users to schedule their own notifications.  Although we wanted
- to implement this feature for our users, it is a paid service on Roost so we are unable to do this.
-* We decided that the Web Notifications API was not a viable option due to compatibility issues with the desktop
- version of Internet Explorer, and the mobile versions of Internet Explorer, Opera, and Safari.  In addition, the
- Web Notifications API was not capable of sending notifications to the user unless the user had the web application
- open or running in the background.
-* Notifications do not work unless you are viewing the web app from our domain virtuevice.us therefore it has been
-commented out in the offline files. 
+REMOVED FOR PUBLIC GIT
 
 ## Database
 * We are using Firebase to host our website: virtue-vice.firebaseapp.com
-* We purchased a domain name to support Chrome notifications: virtuevice.us
 
 ## Miscellaneous
 * If a user edits a habit such that the new daily frequency is lower than the amount of times the user filled out
@@ -57,15 +42,7 @@ commented out in the offline files.
 * The virtuevice.us domain name was purchased for $4, and Firebase custom domain naming feature was $10.
 
 ## Login credentials
-* Virtue Vice login details:
-Username: nerdzvirtuevice1@gmail.com
-Password: nerdzvirtuevice
-* Rollbar login details:
-Username: nerdzvirtuevice1@gmail.com
-Password: nerdzvirtuevice1
-* MixPanel login details:
-Username: nerdzvirtuevice1@gmail.com
-Password: nerdzvirtuevice
+REMOVED FOR PUBLIC GIT
 
 ## Signup/Login notes
 * Due to Firebase's connection and limited capabilities, Android and iOS Facebook/Google popup authentication does not work on the offline version. It works on the domain in a web browser.
@@ -90,18 +67,8 @@ Password: nerdzvirtuevice
 * We included both compressed and uncompressed js files in the folder.
 
 ## Android/IOS POC
-* A mostly working Android app version of the app is included as a .apk file. Some features do not work such as 
-image upload, Facebook/Google login, and back button. We did not include an iOS version because we did not have access
-to a Mac due to hardware issues. But POC would be similar to Android app where we used a web view to open the website
-in a web client through the native application.
+REMOVED FOR PUBLIC GIT
 
 ## Chrome Package Effort (extra credit)
-* We have two Chrome versions packaged. The first version does not have functionality outside of the login page because 
-Chrome apps are not allowed to load external scripts, specifically the one from Firebase. This can be resolved by using 
-a different database that can be accessed using a local script.
-* To install the first version, just drag VirtueVice_single.crx to chrome://extensions page.
-* The second version is converted from our Android app version, but requires the installation of Archon Runtime extension. 
-This can be done by following the instructions here:
-https://github.com/vladikoff/chromeos-apk/blob/master/archon.md
-Then, just drag VirtueVice_double.crx to chrome://extensions page.
+REMOVED FOR PUBLIC GIT
 
